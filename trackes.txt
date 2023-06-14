@@ -1,0 +1,52 @@
+create table vaccination
+(
+u_id int primary key auto_increment,
+u_fname varchar (255),
+u_lname varchar (255),
+u_email varchar (255),
+u_address1 varchar (255),
+u_address2 varchar (255),
+u_city varchar (255),
+u_state varchar (255),
+u_birth varchar (255),
+u_gender varchar(255),
+u_vaccinex varchar (255),
+u_phone int,
+u_age int
+);
+
+create table aregister
+(
+a_id int primary key auto_increment,
+a_name varchar (200),
+a_email varchar (200) unique,
+a_key varchar (250),
+a_nonce varchar (250),
+a_values varchar (250)
+);
+
+create table uregister
+(
+u_id int primary key auto_increment,
+u_name varchar (200),
+u_email varchar (200),
+u_key varchar (250),
+u_nonce varchar (250),
+u_values varchar (250)
+);
+
+create table contact
+(
+c_id int primary key auto_increment,
+c_fname varchar (200),
+c_lname varchar (200),
+c_email varchar (200),
+c_subject varchar (255),
+c_message varchar (255)
+);
+
+create table vaccines
+(
+    v_id int primary key auto_increment,
+    v_name varchar (255)
+);
